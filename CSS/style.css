@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(196, 196, 196);
+}
+.clear-fix{
+    clear: left;
+}
+#members .member{
+    width: 25%;
+    float: left;
+    border: #fff solid 4px;
+    position: relative;
+    overflow: hidden;
+}
+#members .member img{
+    width: 100%;
+    transition: all 1s;
+}
+#members .member .text{
+    background-color: rgba(128, 128, 128, 0.789);
+    text-align: center;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    opacity: 0;
+}
+#members .member .text h3{
+    background-color: rgba(245, 244, 244, 0.516);
+    padding: 20px 0;
+    position: relative;
+    left: 100%;
+    transition: all 1s 2s;
+}
+#members .member .text p{
+    padding: 40px 30px;
+    line-height: 32px;
+    position: relative;
+    left: 100%;
+    transition: all 1s 3s;
+}
+/************************** Hover **********************/
+#members .member:hover .text{
+    opacity: 1;
+    transform: rotate(360deg);
+}
+#members .member:hover img{
+    transform: scale(1.3);
+}
+#members .member:hover .text h3{
+    left: 0;
+}
+#members .member:hover .text p{
+    left: 0;
+}
